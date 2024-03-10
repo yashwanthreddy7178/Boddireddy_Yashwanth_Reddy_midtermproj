@@ -10,7 +10,7 @@ The code reads a dataset of transactions and uses the Apriori algorithm to find 
 Clone the repository from the repository to your local machine using Git. You can do this by running the following command in your terminal:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/yashwanthreddy7178/Boddireddy_Yashwanth_Reddy_midtermproj.git
 ```
 ### STEP 2: 
 Create a conda environment after opening the repository. It's recommended to do this project in a virtual environment to avoid conflicts with other Python packages you may have installed.
@@ -29,9 +29,9 @@ or
 python -m venv env
 ```
 ```bash
-source env/bin/activate  # On Windows, use `env\Scripts\activate`
+source env/bin/activate  
 ```
-
+Note: On Windows, use `env\Scripts\activate`
 
 ### STEP 3:
 install the requirements
@@ -48,8 +48,7 @@ run it using jupyter notebook by opening the `Apriori.ipynb` file.
 Note: Please make sure you have installed the required packages before running the code. If any package is missing, please install it from the requirements.txt file.
 
 ```bash
-# Finally run the following command
-python app.py
+python apriori.py
 ```
 Follow the prompts: The script will prompt you to enter a number corresponding to the dataset you want to load. Enter a number between 1 and 5.
 
