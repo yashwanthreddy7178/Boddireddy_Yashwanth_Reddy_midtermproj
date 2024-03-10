@@ -169,10 +169,10 @@ print("Validating with python packages of FP Growth:\n")
 start_time = time.time()
 
 # Find frequent itemsets with the fpgrowth algorithm
-frequent_itemsets_fp = fpgrowth(df_encoded, min_support=0.1, use_colnames=True)
+frequent_itemsets_fp = fpgrowth(df_encoded, min_support=min_sup, use_colnames=True)
 
 # Generate association rules
-rules_fp = association_rules(frequent_itemsets_fp, metric="confidence", min_threshold=0.1)
+rules_fp = association_rules(frequent_itemsets_fp, metric="confidence", min_threshold=min_con)
 
 # End timing
 end_time = time.time()
